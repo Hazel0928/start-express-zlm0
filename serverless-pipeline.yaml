@@ -1,0 +1,10 @@
+name: Deploy Express application to FC
+steps:
+  - run: npm i @serverless-devs/s -g --registry=https://registry.npmmirror.com
+  - run: s -v
+  - run: echo ${{secrets.ALIYUN_ACCOUNTID}}
+  - run: echo ${{secrets.ALIYUN_AK}}
+  - run: echo ${{secrets.ALIYUN_SK}}
+  - run: echo ${{ALIYUN_SK}}
+  - run: echo ${{AccessKeyID}}
+  - run: echo ${{secrets}}
